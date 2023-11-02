@@ -73,7 +73,7 @@ const Checkout = () => {
             email: email.current.value,
             phone_number: phone.current.value,
             address: {
-                country: 'Egypt',
+                country: 'India',
                 city: city.current.value,
                 area: area.current.value,
                 street: street.current.value,
