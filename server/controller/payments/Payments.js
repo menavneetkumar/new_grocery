@@ -3,6 +3,9 @@ import axios from "axios";
 import jwt from "jsonwebtoken";
 import generateId from "../../utils/generateId.js";
 import {ORDERS_BASEURL, WEBSITE_BASE_URL} from "../../services/BaseURLs.js";
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 export const createCheckoutSession = async (req, res) => {
     try {
@@ -19,7 +22,7 @@ export const createCheckoutSession = async (req, res) => {
             line_items: products.map((product) => {
                 return {
                     price_data: {
-                        currency: "egp",
+                        currency: "₹",
                         product_data: {
                             name: product.name,
                         },

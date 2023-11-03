@@ -56,7 +56,7 @@ export const createCheckoutSession = async (req, res) => {
                     total: total,
                 },
             },
-            success_url: `${WEBSITE_BASE_URL}/checkout/success?order=${order_id}`,
+            success_url: `${WEBSITE_BASE_URL}/`,
             cancel_url: `${WEBSITE_BASE_URL}/cart`,
         });
 
